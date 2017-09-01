@@ -47,6 +47,13 @@ def delete_person(array)
 
 end
 
+def total_person(array)
+	i = 0
+	print "\n El número de personas es:"
+	array.each { |e| i += 1}
+	print "#{i} \n"
+end
+
 puts 'Bienvenido al Sistema de Gestión de Alumnos!, seleccione su opción:'	
 
 option = 0
@@ -77,7 +84,7 @@ while option != 10
 			delete_person(list)
 
 		when 4
-			puts "El número total de personas en el sistema es:"
+			total_person(list)
 
 
 		when 5
